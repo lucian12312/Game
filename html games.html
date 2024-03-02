@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Games Ever</title>
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        .game {
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .game:nth-child(odd) {
+            background-color: #333;
+        }
+        .game:nth-child(even) {
+            background-color: #555;
+        }
+        .game:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        }
+        .game h2 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+        .game p {
+            margin: 10px 0;
+            font-size: 16px;
+            display: none;
+        }
+        .game.active p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Best Games Ever</h1>
+</header>
+
+<div class="game" onclick="toggleDescription(this)">
+    <h2>The Witcher 3: Wild Hunt</h2>
+    <p>A sprawling open-world RPG with captivating storylines, memorable characters, and stunning visuals.</p>
+</div>
+
+<div class="game" onclick="toggleDescription(this)">
+    <h2>The Legend of Zelda: Breath of the Wild</h2>
+    <p>An expansive adventure game that redefined the open-world genre with its freedom and exploration.</p>
+</div>
+
+<div class="game" onclick="toggleDescription(this)">
+    <h2>Red Dead Redemption 2</h2>
+    <p>A cinematic western epic with a richly detailed world, compelling characters, and immersive gameplay.</p>
+</div>
+
+<div class="game" onclick="toggleDescription(this)">
+    <h2>Dark Souls</h2>
+    <p>A challenging action RPG known for its punishing difficulty, intricate level design, and deep lore.</p>
+</div>
+
+<div class="game" onclick="toggleDescription(this)">
+    <h2>Super Mario Odyssey</h2>
+    <p>A colorful and inventive platformer that takes Mario on a globe-trotting adventure with innovative gameplay mechanics.</p>
+</div>
+
+<div class="game" onclick="toggleDescription(this)">
+    <h2>The Elder Scrolls V: Skyrim</h2>
+    <p>An epic fantasy RPG set in a vast open world, offering limitless exploration, quests, and adventures.</p>
+</div>
+
+<div class="game" onclick="toggleDescription(this)">
+    <h2>Grand Theft Auto V</h2>
+    <p>An action-packed open-world game featuring a sprawling city, diverse characters, and a gripping narrative.</p>
+</div>
+
+<div class="game" onclick="toggleDescription(this)">
+    <h2>Halo: Combat Evolved</h2>
+    <p>A groundbreaking first-person shooter that revolutionized the genre and introduced players to the iconic Master Chief.</p>
+</div>
+
+<div class="game" onclick="toggleDescription(this)">
+    <h2>Portal 2</h2>
+    <p>A mind-bending puzzle game with innovative mechanics and a hilarious narrative, offering both single-player and co-op modes.</p>
+</div>
+
+<script>
+    function toggleDescription(game) {
+        game.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
